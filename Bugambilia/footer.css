@@ -1,0 +1,53 @@
+.footer {
+    background: #8C034E;
+    color: white;
+padding: 50px 0;
+display: flex;
+justify-content: space-around;
+}
+.footer .column {
+width: 23%;
+}
+.footer h2 {
+color: #fff;
+font-size: 24px;
+}
+.footer h3 {
+color: #fff;
+font-size: 18px;
+margin-bottom: 20px;
+}
+.footer p, .footer a {
+color: #bbb;
+font-size: 14px;
+text-decoration: none;
+margin-bottom: 10px;
+}
+.footer a:hover {
+color: #fff;
+}
+.footer .social a {
+display: inline-block;
+margin: 0 10px;
+color: #fff;
+font-size: 20px;
+}
+.footer .newsletter input[type="email"] {
+padding: 10px;
+width: 70%;
+border: none;
+border-radius: 5px 0 0 5px;
+margin-right: -5px;
+}
+
+.footer .newsletter button {
+padding: 10px 20px;
+border: none;
+background-color: #39b54a;
+color: #fff;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+}
+.footer .newsletter button:hover {
+background-color: #31a343;
+}

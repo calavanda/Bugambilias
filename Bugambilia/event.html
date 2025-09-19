@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugambilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--sociales-->
+    <style>
+              * {
+  box-sizing: border-box;
+}
+.event {
+    position: relative;
+    background: url('img/event.jpg') no-repeat center center/cover;
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.event-content h1 {
+    color: white;
+    /*tamaño de letra*/
+    font-size: 80px;
+}
+/*evento*/
+.contador {
+            background-color: #8bc34a;
+            color: white;
+            padding: 40px 80px;
+            border-radius: 8px;
+            font-size: 6rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contador span {
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+.containerevent {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 900px; /* Ancho máximo del contenedor */
+    width: 100%;
+}
+
+.imaget-section {
+    position: relative;
+    flex: 1;
+}
+
+.imaget-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.date .day {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.date .month {
+    font-size: 14px;
+}
+
+.contentevent-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.tag {
+    background-color: #00BFA6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.tag h1 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="90" height="100" align="left"/>
+                <img src="img/nombre.png" width="300" height="75" align="left"/>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="donar.html">Donación</a></li>
+                <li><a href="adop.html">Adopción</a></li>
+                <li><a href="event.html">Eventos</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="event">
+        <div class="event-content">
+            <h1>Eventos</h1>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- evento-->
+    <div class="contador">
+        <div id="numero">0</div>
+        <span>Árboles plantados</span>
+    </div>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/02Ene.jpg" alt="conferencia">
+                <div class="date">
+                    <span class="day">02</span>
+                    <span class="month">SEP</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">CONFERENCIA</div>
+                <h1 style="font-size: 28px;">¡Tenemos nueva alianza! Porque sabemos que para hacer cambios reales, necesitamos trabajar juntos</h1>
+                <p>Juntos, planificaremos y desarrollaremos proyectos e iniciativas para restaurar nuestros ecosistemas, compartiremos experiencias y estudios que 
+                    puedan ayudar a enriquecer los proyectos de ambas organizaciones. Para nosotros, trabajar colaborativamente es la base de todos nuestros objetivos.</p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/20Ene.jpeg" alt="reforestacion">
+                <div class="date">
+                    <span class="day">20</span>
+                    <span class="month">SEP</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">REFORESTACIÓN</div>
+                <h1 style="font-size: 28px;">No nos cansaremos de apoyar a las brigadas que luchan contra el fuego</h1>
+                <p>Gracias a nuestro nuevo Plan de Prevención de Incendios 2024, estamos donando herramientas para prevenir estos siniestros. En este caso, entregaremos 
+                equipos a la Municipalidad de Gutierrez Zamora para ayudarlos en en sus labores.</p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/01Feb.jpeg" alt="reforestacion">
+                <div class="date">
+                    <span class="day">01</span>
+                    <span class="month">OCT</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">JARDINERIA</div>
+                <h1 style="font-size: 28px;">Conoce nuestras primeras plantas del vivero</h1>
+                <p>El año pasado, en respuesta a la escasez de plantas nativas para reforestar, nos uniremos con la Municipalidad de Papantla para dar 
+                    vida a un nuevo proyecto: nuestro primer vivero. Este vivero es más que un espacio físico, es un testimonio vivo de nuestro compromiso con la 
+                    restauración. ¡Estamos emocionados por cada paso que darán estos árboles nativos! Estaremos compartiendo con ustedes todos los detalles de su 
+                    crecimiento y desarrollo.</p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/10Feb.jpg" alt="reforestacion">
+                <div class="date">
+                    <span class="day">10</span>
+                    <span class="month">OCT</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">JARDINERIA</div>
+                <h1 style="font-size: 28px;">Nuevo desafío: Nos propusimos a plantar 2.500 árboles</h1>
+                <p>Felicitamos profundamente esta iniciativa y nos enorgullece ser parte de ella, ya que consideramos que este enfoque es fundamental para abordar la 
+                    brecha de áreas verdes en nuestro país y afrontar los eventos de temperatura extrema que se avecinan. La meta inicial era plantar 2.023 árboles y 
+                    ¿la superaremos?, nosotros contribuiremos con 600 árboles nativos a este importante proyecto.</p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/n3.jpg" alt="reforestacion">
+                <div class="date">
+                    <span class="day">16</span>
+                    <span class="month">OCT</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">JARDINERIA</div>
+                <h1 style="font-size: 28px;">Recuperando espacios desde la reforestación</h1>
+                <p>Acompañados de 20 voluntarios, llevaremos a cabo la plantación de 20 árboles nativos de diversas especies en un terreno eriazo. Esta actividad tiene un 
+                    significado especial, los beneficios del arbolado urbano son innumerables, ya que incluyen la reducción de ruido y temperaturas, así como la 
+                    absorción de dióxido de carbono (CO2) y recuperación de áreas verdes, lo que tiene un impacto positivo en la salud física y mental de los vecinos. </p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+     <center>
+    <div class="containerevent">
+        <div class="imaget-section">
+            <img src="img/eventos/03Abril.jpg" alt="Niño pintando">
+            <div class="date">
+                <span class="day">03</span>
+                <span class="month">NOV</span>
+            </div>
+        </div>
+        <div class="contentevent-section">
+            <div class="tag">ARTE Y DISEÑO</div>
+            <h1 style="font-size: 28px;">Actividades con plantas para niños: ¡manos a la tierra!</h1>
+            <p>Los niños son seres curiosos por naturaleza y, en su proceso de descubrimiento del mundo, siempre están buscando nuevas aventuras. A través del juego y 
+                la exploración, los niños aprenden a interactuar con su entorno, a resolver problemas y a desarrollar habilidades importantes, como la comunicación y el 
+                trabajo en equipo.</p>
+        </div>
+    </div>
+</center>
+<br><br><br>
+<center>
+    <div class="containerevent">
+        <div class="imaget-section">
+            <img src="img/eventos/15Abril.png" alt="Niño pintando">
+            <div class="date">
+                <span class="day">15</span>
+                <span class="month">NOV</span>
+            </div>
+        </div>
+        <div class="contentevent-section">
+            <div class="tag">INSPIRACIÓN</div>
+            <h1 style="font-size: 28px;">Team building con plantas</h1>
+            <p>Te ayudamos a mejorar el ambiente laboral y haga feliz a tu equipo de trabajo; o qué tal una cajita de regalo para que cada persona pueda decorar una 
+                maceta y darle vida a su espacio favorito, ya sea en su home office o en la oficina, con una hermosa planta.</p>
+        </div>
+    </div>
+</center>
+<br><br><br>
+<center>
+    <div class="containerevent">
+        <div class="imaget-section">
+            <img src="img/eventos/n4.jpg" alt="Niño pintando">
+            <div class="date">
+                <span class="day">30</span>
+                <span class="month">NOV</span>
+            </div>
+        </div>
+        <div class="contentevent-section">
+            <div class="tag">JARDINERIA</div>
+            <h1 style="font-size: 28px;">¿Recuperaremos espacios públicos a través de áreas verdes?</h1>
+            <p>Para este año, se fijaron la meta de plantar 2.500 nuevos árboles urbanos, de diversas especies nativas con bajo consumo hídrico, lo que implica la 
+                movilización de más de 440 voluntarios y la intervención de 14 hectáreas de la zona con árboles de 2 a 3 metros de altura. Este trabajo beneficia a 
+                más de 351.100 vecinos.</p>
+        </div>
+    </div>
+</center>
+<br><br><br>
+<center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/09May.jpg" alt="Niño pintando">
+                <div class="date">
+                    <span class="day">09</span>
+                    <span class="month">DIC</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">INSPIRACIÓN</div>
+                <h1 style="font-size: 28px;">Las mejores plantas para regalar a mamá esta navidad</h1>
+                <p>Este año, en lugar de flores o chocolates, regalamos una planta para demostrar cuánto las queremos y valoramos. 
+                    Las plantas son regalos significativos y duraderos que simbolizan vida y amor, además de tener muchos beneficios para la salud y el bienestar. 
+                    Son la elección perfecta para regalar a mamá en su día especial y en cualquier ocasión.</p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/05Jun.jpg" alt="Niño pintando">
+                <div class="date">
+                    <span class="day">15</span>
+                    <span class="month">DIC</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">INSPIRACIÓN</div>
+                <h1 style="font-size: 28px;">¡Manos en la tierra!</h1>
+                <p>Planeamos plantar un total de 180 árboles nativos, movilizando a más de 180 voluntarios en nuestras actividades e interviniendo aproximadamente 
+                    14.860 M2. A pesar de todo, sabemos que aún hay un largo camino por recorrer para preservar nuestro querido medioambiente.</p>
+            </div>
+        </div>
+    </center>
+    <br><br><br>
+    <center>
+        <div class="containerevent">
+            <div class="imaget-section">
+                <img src="img/eventos/30Jul.jpg" alt="Niño pintando">
+                <div class="date">
+                    <span class="day">30</span>
+                    <span class="month">DIC</span>
+                </div>
+            </div>
+            <div class="contentevent-section">
+                <div class="tag">INSPIRACIÓN</div>
+                <h1 style="font-size: 28px;">¡Más de 5 mil árboles nativos a pequeños agricultores familiares afectados por los incendios forestales!</h1>
+                <p>Queremos donar más de 5 mil árboles nativos a más de 200 familias que dependen del manejo sustentable de los bosques. La entrega comenzara en dos de 
+                las regiones más afectadas por los incendios de la última temporada, ira dirigida a agricultores, recolectores, apicultores y comunidades 
+                rurales.</p>
+            </div>
+        </div>
+    </center>
+<br><br><br><br><br><br>
+<!-- Pie de pagina -->
+<footer class="footer">
+    <div class="column">
+        <h2><b>BUGAMBI<span style="color: #8c0383;">LIA</span></b></h2>
+        <p>Organización Bugambilia, busca realizar un cambio y dar un impacto a futuro con la reforestación del ambiente</p>
+        <div class="social">
+          <a href="https://x.com/Bugambilia0"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61561767431103"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/bugambilia0/"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="column">
+        <h3>SERVICIOS</h3>
+        <p><a href="nosotros.html">Sobre nosotros</a></p>
+        <p><a href="donar.html">Donacion</a></p>
+        <p><a href="adop.html">Adopción de plantas</a></p>
+        <p><a href="event.html">Eventos</a></p>
+        <p><a href="registro.html">Registrarse</a></p>
+        <p><a href="contacto.html">Contacto</a></p>
+    </div>
+    <div class="column">
+        <h3>CONTACTENOS</h3>
+        <p><i class="fa fa-map-marker"></i> Centro, Gutiérrez Zamora</p>
+        <p><i class="fa fa-phone"></i>784 5963 211</p>
+        <p><i class="fa fa-envelope"></i> bugambilia869@gmail.com</p>
+          <h3>¿Deseas tener mas información?</h3>
+        <div class="newsletter">
+            <input type="email" placeholder="Your Email"><br><br>
+            <button>Registrarse</button>
+        </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const numeroElemento = document.getElementById("numero");
+        const total = 75; // Número objetivo
+        const duracion = 9000; // Duración de la animación en milisegundos
+
+        let inicio = null;
+        const paso = (timestamp) => {
+            if (!inicio) inicio = timestamp;
+            const progreso = timestamp - inicio;
+            const porcentajeProgreso = Math.min(progreso / duracion, 1);
+            const cantidad = Math.floor(porcentajeProgreso * total);
+            numeroElemento.textContent = cantidad.toLocaleString('de-DE', { minimumFractionDigits: 3 });
+
+            if (progreso < duracion) {
+                window.requestAnimationFrame(paso);
+            }
+        };
+
+        window.requestAnimationFrame(paso);
+    });
+</script>
+  </body>
+  </html>
+  

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugambilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--sociales-->
+   <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <style>
+              * {
+  box-sizing: border-box;
+}
+.adop {
+    position: relative;
+    background: url('img/adoptar.png') no-repeat center center/cover;
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adop-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.adop-content h1 {
+    color: white;
+    /*tamaño de letra*/
+    font-size: 80px;
+}
+/*adoptar planta*/
+.containeradop {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #c443e8;
+}
+
+.card button:hover {
+    background-color: #e0e0e0;
+}
+
+.icon img {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.adop-button a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    color:#fff;
+    background-color: #c443e8;
+}
+    </style>
+</head>
+<body>
+    <!-- navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="90" height="100" align="left"/>
+                <img src="img/nombre.png" width="300" height="75" align="left"/>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="donar.html">Donación</a></li>
+                <li><a href="adop.html">Adopción</a></li>
+                <li><a href="event.html">Eventos</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="adop">
+        <div class="adop-content">
+            <h1>Adopciones de plantitas</h1>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- adopciones -->
+    <section class="content">
+        <div class="text">
+          <center><h1><span style="font-family: 'Coiny', cursive; color: #800020; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-size: 75px;">
+            Honra cada hito importante de tu vida plantando un árbol</span></h1></center>
+            <br>
+      </section>
+      <br>
+      <br>
+      <!-- contenedor de plantas -->
+      <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Hoja-Elegante.jpg" alt="planta" width="250">
+            </div>
+                    <h3>Hoja Elegante</h3>
+                    <p>Originaria de América tropical, ampliamente distribuida en México.</p>
+                    <p>Desde: <span class="price">$290</span></p>
+                    <div class="adop-button">
+                        <a href="registro.html">Adoptar</a>
+                    </div>
+            </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Agave.jpg" alt="planta" width="250">
+            </div>
+            <h3>Agave</h3>
+            <p>Originario de México, es un Bestseller por ser un elemento decorativo, elegante y auténtico.</p>
+            <p>Desde: <span class="price">$750</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Esqueleto-.jpg" alt="planta" width="250">
+            </div>
+            <h3>Esqueleto</h3>
+            <p>Originaria de las selvas tropicales de Sudamérica y Centroamérica.</p>
+            <p>Desde: <span class="price">$370</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Palma-Areca.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Palma Areca</h3>
+            <p>Es una especie tropical de palmera originaria de Madagascar.</p>
+            <p>Desde: <span class="price">$400</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Afelandra.jpg" alt="planta" width="250">
+            </div>
+            <h3>Afelandra</h3>
+            <p>Originaria de Brasil, esta planta prefiere climas cálidos y húmedos.</p>
+            <p>Desde: <span class="price">$700</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Alocasia.jpg" alt="planta" width="250">
+            </div>
+            <h3>Alocasia</h3>
+            <p>Procedente de Asia Tropical, la Alocasia o planta oreja de elefante se caracteriza por el tamaño de sus hojas</p>
+            <p>Desde: <span class="price">$290</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Amoena-Reyna.jpg" alt="planta" width="250">
+            </div>
+            <h3>Amoena Reyna</h3>
+            <p>Perteneciente a la familia de las aráceas, es la opción perfecta para aquellos que buscan un toque exótico y tropical en su hogar o jardín.</p>
+            <p>Desde: <span class="price">$370</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Anturio.jpg" alt="planta" width="250">
+            </div>
+            <h3>Anturio</h3>
+            <p>Nativo de Colombia, Venezuela y Perú, planta de interior exótica y elegante.</p>
+            <p>Desde: <span class="price">$290</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Aralia.jpg" alt="planta" width="250">
+            </div>
+            <h3>Aralia</h3>
+            <p>Originaria de Japón, comúnmente llamado árbol de angélica, es un género de la familia Araliaceae.</p>
+            <p>Desde: <span class="price">$370</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Abundancia.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Abundancia</h3>
+            <p>La portulacaria afra es una suculenta siempreverde originaria de Sudáfrica.</p>
+            <p>Desde: <span class="price">$59</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Árbol-de-Aguacate-Hass.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Aguacate Hass</h3>
+            <p>Originado a partir del cruzamiento de la raza mexicana, su piel pasa de verde oscuro a verde purpurino.</p>
+            <p>Desde: <span class="price">$1,075</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Árbol-de-Higo.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Higo</h3>
+            <p>Originario de la región del Mediterráneo y partes de Asia occidental.</p>
+            <p>Desde: <span class="price">$720</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/arbol-de-jade.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Jade</h3>
+            <p>Originario de Sudáfrica y Mozambique, posee un crecimiento arbusto.</p>
+            <p>Desde: <span class="price">$138</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Arbol-de-Limon.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Limón</h3>
+            <p>Originario de la zona este de la región himaláyica y áreas adyacentes.</p>
+            <p>Desde: <span class="price">$1,075</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Naranjo.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Naranja</h3>
+            <p>Originaria del sureste de China y norte de Birmania.</p>
+            <p>Desde: <span class="price">$1,380</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Olivo.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Árbol de Olivo</h3>
+            <p>Originario del Asia Menor, grueso en contextura y bastante ramificado.</p>
+            <p>Desde: <span class="price">$1,075</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Árbol-de-Higo.jpg" alt="planta" width="250">
+            </div>
+            <h3>Begonia Maculata</h3>
+            <p>Originaria de las zonas tropicales de México, esta planta tiene varios nombres.</p>
+            <p>Desde: <span class="price">$980</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Black-Magic.jpg" alt="planta" width="250">
+            </div>
+            <h3>Black Magic</h3>
+            <p>Procedente del sureste asiático, también conocida como oreja de elefante.</p>
+            <p>Desde: <span class="price">$370</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Bromelia.jpg" alt="planta" width="250">
+            </div>
+            <h3>Bromelia</h3>
+            <p>Se distribuye en América Latina, especialmente en las regiones del pacífico y Golfo de México.</p>
+            <p>Desde: <span class="price">$600</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Bugambilia.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Bugambilia</h3>
+            <p>Es nativo de Sudamérica, principalmente de Brasil y Perú</p>
+            <p>Desde: <span class="price">$370</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Cactus.jpg" alt="planta" width="250">
+            </div>
+            <h3>Cactus</h3>
+            <p>Es una planta arbustiva que provienen de las zonas desérticas de América.</p>
+            <p>Desde: <span class="price">$59</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Calathea-Makoyana.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Calathea Makoyana</h3>
+            <p>Nativa de las regiones tropicales de América del Sur, Brasil, pertenece a la familia Marantaceae.</p>
+            <p>Desde: <span class="price">$70</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Cheflera.jpg" alt="planta" width="250">
+            </div>
+            <h3>Chefflera</h3>
+            <p>Es una planta de la familia Araliaceae, nativa de Taiwán y de la isla China de Hainan.</p>
+            <p>Desde: <span class="price">$720</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/croton.jpg" alt="arbol" width="250">
+            </div>
+            <h3>Crotón</h3>
+            <p>Es nativa del sur de la India, Sri Lanka, Indonesia, Malasia , y las islas occidentales del Océano Pacífico.</p>
+            <p>Desde: <span class="price">$168</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Cuna-de-Moises.jpg" alt="planta" width="250">
+            </div>
+            <h3>Cuna de Moisés</h3>
+            <p>Es originario de México, América tropical, Malasia y oeste del Pacífico.</p>
+            <p>Desde: <span class="price">$159</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Espada.jpg" alt="planta" width="250">
+            </div>
+            <h3>Espada</h3>
+            <p>Originaria del oeste de África tropical hasta Nigeria y al este de República Democrática del Congo.</p>
+            <p>Desde: <span class="price">$129</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/ficus-elastica.jpeg" alt="arbol" width="250">
+            </div>
+            <h3>Ficus Elástica</h3>
+            <p>Nativa del nordeste de India (Assam), oeste de Indonesia (Sumatra y Java).</p>
+            <p>Desde: <span class="price">$600</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Garra-de-Leon.jpg" alt="planta" width="250">
+            </div>
+            <h3>Garra de León</h3>
+            <p>Esta planta es nativa de Brasil, pero es ampliamente cultivada como planta ornamental.</p>
+            <p>Desde: <span class="price">$600</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Helecho-Boston.jpg" alt="planta" width="250">
+            </div>
+            <h3>Helecho Boston</h3>
+            <p>Es originario de zonas tropicales de todo el mundo y se desarrollan naturalmente en selvas y ambientes tropicales muy lluviosos.</p>
+            <p>Desde: <span class="price">$290</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Lavanda.jpg" alt="planta" width="250">
+            </div>
+            <h3>Lavanda</h3>
+            <p>Es originario de Francia (Alpes, Vaucluse y Dròme), España, Inglaterra y la antigua Unión Soviética.</p>
+            <p>Desde: <span class="price">$180</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="containeradop">
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Lirio-Persa.jpg" alt="planta" width="250">
+            </div>
+            <h3>Lirio Persa</h3>
+            <p>Originaria de África, es una especie de tipo perenne rizomatosa que resulta muy fácil de cultivar.</p>
+            <p>Desde: <span class="price">$58</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Orquídea.jpg" alt="planta" width="250">
+            </div>
+            <h3>Orquídea</h3>
+            <p>Proviene del sur del Himalaya, la India, China y Madagascar. </p>
+            <p>Desde: <span class="price">$460</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="img/plantas/Sábila.jpg" alt="planta" width="250">
+            </div>
+            <h3>Sábila</h3>
+            <p>Es originaria de la península Arábiga, crece en suelo arenoso, seco, arcilloso y calcáreo.</p>
+            <p>Desde: <span class="price">$280</span></p>
+            <div class="adop-button">
+                <a href="registro.html">Adoptar</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+<!-- Pie de pagina -->
+<footer class="footer">
+  <div class="column">
+    <h2><b>BUGAMBI<span style="color: #8c0383;">LIA</span></b></h2>
+    <p>Organización Bugambilia, busca realizar un cambio y dar un impacto a futuro con la reforestación del ambiente</p>
+      <div class="social">
+        <a href="https://x.com/Bugambilia0"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61561767431103"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bugambilia0/"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="column">
+      <h3>SERVICIOS</h3>
+      <p><a href="nosotros.html">Sobre nosotros</a></p>
+      <p><a href="donar.html">Donacion</a></p>
+      <p><a href="adop.html">Adopción de plantas</a></p>
+      <p><a href="event.html">Eventos</a></p>
+      <p><a href="registro.html">Registrarse</a></p>
+      <p><a href="contacto.html">Contacto</a></p>
+  </div>
+  <div class="column">
+      <h3>CONTACTENOS</h3>
+      <p><i class="fa fa-map-marker"></i> Centro, Gutiérrez Zamora</p>
+      <p><i class="fa fa-phone"></i>784 5963 211</p>
+      <p><i class="fa fa-envelope"></i> bugambilia869@gmail.com</p>
+      <h3>¿Deseas tener mas información?</h3>
+      <div class="newsletter">
+          <input type="email" placeholder="Your Email"><br><br>
+          <button>Registrarse</button>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

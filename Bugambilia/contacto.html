@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugambilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--sociales-->
+    <style>
+              * {
+  box-sizing: border-box;
+}
+/*contacto */
+.contact-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-container textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+/*pie de pagina*/
+        .footer {
+            background: #8C034E;
+            color: white;
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.footer .column {
+	width: 23%;
+}
+.footer h2 {
+	color: #fff;
+	font-size: 24px;
+}
+.footer h3 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.footer p, .footer a {
+	color: #bbb;
+	font-size: 14px;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.footer a:hover {
+	color: #fff;
+}
+.footer .social a {
+	display: inline-block;
+	margin: 0 10px;
+	color: #fff;
+	font-size: 20px;
+}
+.footer .newsletter input[type="email"] {
+	padding: 10px;
+	width: 70%;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	margin-right: -5px;
+}
+.footer .newsletter button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #39b54a;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+.footer .newsletter button:hover {
+	background-color: #31a343;
+}
+    </style>
+</head>
+<body>
+    <!-- navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="90" height="100" align="left"/>
+                <img src="img/nombre.png" width="300" height="75" align="left"/>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="donar.html">Donación</a></li>
+                <li><a href="adop.html">Adopción</a></li>
+                <li><a href="event.html">Eventos</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br>
+      <!-- contenedor de contacto -->
+      <div class="contact-container">
+        <div class="image-container">
+            <img src="img/logo.png" alt="Imagen de Contacto">
+        </div>
+        <div class="form-container">
+            <h2>Contáctanos</h2>
+            <p>Llena esta forma para ponerte en contacto con nosotros</p>
+            <p><strong>bugambilia869@gmail.com</strong><br>784 5963 211</p>
+            <form action="#" method="post">
+                <label for="name">Tu nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Tu correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Tu mensaje</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" id="mensaje" onclick="message()">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+    <br><br><br><br>
+<!-- Pie de pagina -->
+<footer class="footer">
+  <div class="column">
+    <h2><b>BUGAMBI<span style="color: #8c0383;">LIA</span></b></h2>
+    <p>Organización Bugambilia, busca realizar un cambio y dar un impacto a futuro con la reforestación del ambiente</p>
+      <div class="social">
+        <a href="https://x.com/Bugambilia0"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61561767431103"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bugambilia0/"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="column">
+      <h3>SERVICIOS</h3>
+      <p><a href="nosotros.html">Sobre nosotros</a></p>
+      <p><a href="donar.html">Donacion</a></p>
+      <p><a href="adop.html">Adopción de plantas</a></p>
+      <p><a href="event.html">Eventos</a></p>
+      <p><a href="registro.html">Registrarse</a></p>
+      <p><a href="contacto.html">Contacto</a></p>
+  </div>
+  <div class="column">
+      <h3>CONTACTENOS</h3>
+      <p><i class="fa fa-map-marker"></i> Centro, Gutiérrez Zamora</p>
+      <p><i class="fa fa-phone"></i>784 5963 211</p>
+      <p><i class="fa fa-envelope"></i> bugambilia869@gmail.com</p>
+      <h3>¿Deseas tener mas información?</h3>
+      <div class="newsletter">
+          <input type="email" placeholder="Your Email"><br><br>
+          <button>Registrarse</button>
+      </div>
+  </div>
+</footer>
+<script>
+    function mostrarMensaje() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const mensaje = urlParams.get('mensaje');
+            const mensajeDiv = document.getElementById('mensaje');
+            if (mensaje) {
+                mensajeDiv.textContent = decodeURIComponent(mensaje);
+                mensajeDiv.style.color = 'green';
+            }
+        }
+        mostrarMensaje();
+    //donacion exitosa mediante un alert
+    function message(){
+  alert("Mensaje enviado con exito");
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title> Bugambilia </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="footer.css">
+        <style>
+          .header-container {
+              background-color: #c1046c;
+              padding: 10px 20px;
+              margin-bottom: 20px;
+              width: 97.3%;
+          }
+          .subrayado {
+            border-bottom: 2px solid #7e0045; /* Establece un borde inferior de 1 píxel de grosor y color negro */
+            padding-bottom: 5px; /* Añade un espacio para separar el texto del subrayado */
+          }
+  
+          .header-container h2 {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          }
+  
+          .container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              margin: 20px;
+          }
+  
+          .action-item {
+              background: #eab4fc8a;
+              border: 2px solid #7e0045;
+              border-radius: 10px;
+              padding: 20px;
+              margin: 10px;
+              width: 280px;
+              text-align:left;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+
+          .action-item p {
+              color: black;
+          }
+
+          /*Listas de valores */
+          /* Contenedor principal para la imagen y la lista de valores */
+.valores-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+/* Contenedor para la imagen */
+.valores-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.valores-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* Contenedor para la lista de valores */
+.valores-lista {
+    flex: 2;
+    padding: 10px;
+}
+
+/* Estilo del encabezado dentro de la lista de valores */
+.valores-lista h2 {
+    color: #8C034E;
+    text-align: center;
+}
+
+/* Lista de valores */
+.valores-lista ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.valores-lista ol li {
+    background-color: #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    transition: all .3s ease-out;
+}
+
+.valores-lista ol li:hover {
+    background: #eee;
+}
+
+.valores-lista ol li:hover:before {
+    transform: rotate(360deg);
+}
+
+.valores-lista ol li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+/* Listas de valores */
+#lista2 {
+    margin: 0 auto;
+    flex-direction: column;
+    counter-reset: li; 
+    list-style: none; 
+    list-style: decimal; 
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    width: 97.3%;
+    justify-content: center;
+}
+
+#lista2 li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+#lista2 li:hover {
+    background: #eee;
+}
+
+#lista2 li:hover:before {
+    transform: rotate(360deg);
+}
+
+#lista2 li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+            /*miembros*/
+            .team-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+        .team-member { 
+            background-color: #f6e8ee;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+        .team-member:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px 0;
+        }
+        .team-member p {
+            color: #000000;
+            font-size: 18px;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #666;
+            font-size: 20px;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Menu -->
+      <header>
+        <nav class="navbar">
+            <div class="logo">
+              <img src="img/logo.png" width="90" height="100" align="left"/>
+              <img src="img/nombre.png" width="320" height="85" align="left"/>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="donar.html">Donación</a></li>
+                <li><a href="adop.html">Adopción</a></li>
+                <li><a href="event.html">Eventos</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+      <img src="img/sn.jpg" width="1900"/>
+      <br><br>
+<!-- Historia -->
+<div class="header-container">
+    <h2>Historia</h2>
+  </div>
+ <div class="container">
+  <section class="content">
+    <div class="images">
+      <br>
+        <img src="img/n2.jpg" alt="Imagen 1">
+    </div>
+    <div class="text">
+        <p class="large-text"><br>
+          La Fundación Bugambilia fue oficialmente constituida en el año 2024 tras el deseo de
+          apoyar a la conservación de nuestro ecosistema y biodiversidad al contribuir con la
+          disminución del impacto ambiental que el humano va generando día con día. Esto se hace
+          principalmente con el apoyo que hace la comunidad de Gutiérrez Zamora, quienes donan
+          plantas, semillas, etc. para poder contribuir por la causa.
+        </p>
+          <br>
+          <p class="large-text">
+          Nuestra meta principal es reforestar las zonas de Gutiérrez Zamora donde se vean afectadas por las actividades humanas y por los 
+          desastres naturales. Reforestando junto con las personas de la comunidad organizando “eventos” cada cierto tiempo. Ya que con esto 
+          tendrá un efecto positivo para nuestra comunidad, y con esto podemos fomentar y hacer conciencia al resto de la comunidad en los efectos 
+          positivos que esto conlleva.
+        </p>
+        <br>
+        <p class="large-text">
+          Mediante una planeación correcta en cada reforestación junto con una estratégica
+          distribución adecuada de los recursos, se organizan los lugares en donde se llevará la
+          actividad a realizar, en donde al terminar se mostrará en la página la ubicación de los
+          lugares en donde se hizo la realización de la actividad.
+        </p>
+    </div>
+  </section>
+ </div>
+ <br>
+ <br>
+ <br>
+<!-- mision y vision -->
+<div class="header-container">
+  <h2>Misión y Visión</h2>
+</div>
+<br>
+<br>
+<br>
+<div class="container-section">
+  <div class="section">
+      <h2><center><b>Misión</b></center></h2>
+      <p style="line-height: 1.5;" class="larget-text-three">Nuestra misión es promover activamente la conservación del medio ambiente y la biodiversidad a través de la donación y venta de plantas. 
+        Nos dedicamos fervientemente a proporcionar acceso a una amplia variedad de plantas saludables y sostenibles a nuestra comunidad, creemos 
+        firmemente en educar a nuestros clientes y seguidores sobre la crucial importancia de las plantas en el ecosistema global, destacando cómo 
+        cada especie contribuye al equilibrio natural y la preservación de hábitats vitales para la vida silvestre. Además, nos comprometemos a 
+        apoyar proyectos significativos de reforestación y conservación, canalizando una parte de nuestros ingresos hacia iniciativas que 
+        tienen un impacto directo en la restauración de ecosistemas degradados y la protección de especies en peligro. Al elegir nuestras plantas, 
+        no solo embelleces tu entorno, sino que también contribuyes activamente a la construcción de un futuro más verde y sostenible para las 
+        generaciones venideras.</p>
+  </div>
+  <div class="image">
+      <img src="img/MyV.png" alt="Imagen">
+  </div>
+  <div class="section">
+      <h2><center><b>Visión</b></center></h2>
+      <p style="line-height: 1.5;" class="larget-text-three">Aspiramos a ser líderes destacados en la promoción de la sostenibilidad ambiental a través de nuestra fundación. Nuestro objetivo es 
+        crear un mundo donde la naturaleza no solo sobreviva, sino que prospere, asegurando la protección y restauración de los ecosistemas clave, 
+        nos dedicamos a fomentar una conexión profunda entre las personas y las plantas, reconociendo el papel crucial que desempeñan en nuestra 
+        salud y bienestar. Visualizamos un futuro donde cada individuo tenga acceso equitativo a espacios verdes y disfrute de los beneficios 
+        terapéuticos y estéticos de la naturaleza en su vida diaria. Además, promovemos activamente la plantación y cuidado de plantas nativas y 
+        sostenibles, trabajando con comunidades locales para fortalecer la capacidad de recuperación ambiental y mitigar los impactos del cambio climático, a 
+        través de estas iniciativas, no solo aspiramos a mejorar el entorno natural, sino también a inspirar un cambio positivo hacia prácticas 
+        más ecológicas y responsables en la sociedad. </p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Objetivos -->
+<div class="header-container">
+  <h2>Nuestros Objetivos</h2>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="action-item">
+    <div class="subrayado">
+      <b>Educación Comunitaria sobre Conservación Ambiental:</b>
+  </div>
+      <p style="line-height: 1.5;" class="larget-text-three"><br>Ofrecer materiales educativos y actividades prácticas que enseñen a la comunidad 
+        sobre la importancia de proteger el medio ambiente y la biodiversidad local.</p>
+  </div>
+
+  <div class="action-item">
+    <div class="subrayado">
+      <b>Acceso Comunitario a Plantas Sustentables:</b>
+  </div>
+      <p style="line-height: 1.5;" class="larget-text-three"><br>Proporcionar una selección de plantas saludables y ambientalmente responsables que se adapten 
+        a nuestro clima local y ayuden a mejorar el entorno natural de nuestra comunidad.</p>
+  </div>
+
+  <div class="action-item">
+    <div class="subrayado">
+      <b>Apoyo a Proyectos Locales de Reforestación y Conservación:</b>
+  </div>
+      <p style="line-height: 1.5;" class="larget-text-three"><br>Destinar una porción de las ganancias y donaciones a iniciativas comunitarias 
+        de reforestación, restauración de hábitats naturales y conservación de especies autóctonas en nuestra región.</p>
+  </div>
+
+  <div class="action-item">
+    <div class="subrayado">
+      <b>Participación en Eventos Comunitarios:</b>
+    </div>
+      <p style="line-height: 1.5;" class="larget-text-three"><br>Organizar y tomar parte en actividades locales, como ferias de plantas, jornadas de limpieza y 
+        talleres de jardinería, para promover el involucramiento activo de los residentes en la protección del medio ambiente.</p>
+  </div>
+  <br>
+  <div class="action-item">
+    <div class="subrayado">
+      <b>Colaboración con Socios Comunitarios:</b>
+    </div>
+      <p style="line-height: 1.5;" class="larget-text-three"><br>Establecer asociaciones estratégicas con organizaciones locales, centros educativos y autoridades 
+      municipales para reforzar las iniciativas de conservación y ampliar el impacto positivo en nuestra comunidad.</p>
+</div>
+
+<div class="action-item">
+  <div class="subrayado">
+    <b>Evaluación del Impacto Ambiental Comunitario:</b>
+  </div>
+    <p style="line-height: 1.5;" class="larget-text-three"><br>Implementar indicadores para medir y comunicar el impacto ambiental generado por nuestras 
+    iniciativas dentro de la comunidad, resaltando los beneficios directos para el medio natural local.</p>
+</div>
+
+<div class="action-item">
+  <div class="subrayado">
+    <b>Fomento de Prácticas Sustentables en la Comunidad:</b>
+  </div>
+  <p style="line-height: 1.5;" class="larget-text-three"><br>Promover técnicas de jardinería y gestión de recursos que sean sostenibles y se adapten a 
+    las condiciones locales, inspirando a otros residentes a adoptar hábitos más respetuosos con el medio ambiente.</p>
+</div>
+</div>
+<br><br>
+<br><br>
+<!-- Valores -->
+<div class="header-container">
+    <h2>Nuestros Valores</h2>
+  </div>
+  <br>
+<br>
+  <div class="valores-container">
+      <div class="valores-image">
+          <img src="img/n5.jpg" alt="Imagen de valores">
+      </div>
+      <div class="valores-lista">
+          <ol id="lista2">
+            <br>
+            <br>
+            <br>
+            <br>
+              <li><b>Generosidad:</b> Promover la donación y la ayuda a los demás.</li>
+              <li><b>Sostenibilidad:</b> Compromiso con el cuidado del medio ambiente a través de la plantación y el cultivo de plantas.</li>
+              <li><b>Impacto comunitario:</b> Generar un efecto positivo en la comunidad.</li>
+              <li><b>Transparencia:</b> Comunicar claramente cómo se utilizan los fondos donados.</li>
+              <li><b>Colaboración:</b> Trabajar junto a otros para ampliar el alcance e impacto.</li>
+              <li><b>Educación:</b> Concientizar sobre la importancia de la conservación de la naturaleza.</li>
+          </ol>
+      </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<!-- Miembros -->
+ <center>
+  <div class="header-container">
+    <h2>Miembros</h2>
+  </div>
+  <br>
+<br>
+<br>
+<div class="team-container">
+  <div class="team-member">
+      <img src="https://via.placeholder.com/150" alt="Estefanie">
+      <h3>Estefanie Vazquez</h3><br>
+      <p style="color:#666;">Administrador del Proyecto</p>
+      <p>Responsable de planificar, organizar y controlar el desarrollo del proyecto</p>
+      <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+  </div>
+  <div class="team-member">
+      <img src="https://via.placeholder.com/150" alt="Andrey">
+      <h3>Andrey Garcia</h3><br>
+      <p style="color:#666;">Especialista en Marketing Digital</p>
+      <p>Encargado de implementar estrategias de promoción y posicionamiento del sitio web en línea</p>
+      <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+  </div>
+  <div class="team-member">
+      <img src="https://via.placeholder.com/150" alt="Alondra">
+      <h3>Alondra Gomez</h3><br>
+      <p style="color:#666;">Desarrollador Web</p>
+      <p>Responsable de la programación y codificación del sitio web</p>
+      <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+<br>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Pie de pagina -->
+<footer class="footer">
+  <div class="column">
+    <h2><b>BUGAMBI<span style="color: #8c0383;">LIA</span></b></h2>
+    <p>Organización Bugambilia, busca realizar un cambio y dar un impacto a futuro con la reforestación del ambiente</p>
+      <div class="social">
+          <a href="https://x.com/Bugambilia0"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61561767431103"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/bugambilia0/"><i class="fa fa-instagram"></i></a>
+      </div>
+  </div>
+  <div class="column">
+      <h3>SERVICIOS</h3>
+      <p><a href="nosotros.html">Sobre nosotros</a></p>
+      <p><a href="donar.html">Donacion</a></p>
+      <p><a href="adop.html">Adopción de plantas</a></p>
+      <p><a href="event.html">Eventos</a></p>
+      <p><a href="registro.html">Registrarse</a></p>
+      <p><a href="contacto.html">Contacto</a></p>
+  </div>
+  <div class="column">
+      <h3>CONTACTENOS</h3>
+      <p><i class="fa fa-map-marker"></i> Centro, Gutiérrez Zamora</p>
+      <p><i class="fa fa-phone"></i>784 5963 211</p>
+      <p><i class="fa fa-envelope"></i> bugambilia869@gmail.com</p>
+      <h3>¿Deseas tener mas información?</h3>
+      <div class="newsletter">
+          <input type="email" placeholder="Your Email"><br><br>
+          <button>Registrarse</button>
+      </div>
+  </div>
+</footer>
+<!-- / #main-footer -->
+
+
+<script src="script.js"></script>
+    </body>
+</html>

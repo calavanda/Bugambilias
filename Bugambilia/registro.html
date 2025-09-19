@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugambilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--sociales-->
+    <style>
+              * {
+  box-sizing: border-box;
+}
+
+/*registro*/
+.registro {
+    position: relative;
+    background: url('img/registro.jpeg') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulariocaja{
+    width: 380px;
+    height: 550px;
+    position: relative;
+    margin: 10% auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2px;
+    overflow: hidden;  
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 10px;
+}
+.botondeintercambiar{
+    width: 240px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 6px 0.5px rgb(255, 255, 255);
+    border-radius: 30px;
+
+}
+.botoncambiarcaja{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+	font-weight: bold;
+	font-size: 15px;
+	color:rgb(255, 255, 255);
+	
+}
+#btnvai{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    background: linear-gradient(135deg, #f190c4, #c12f98);
+    border-radius: 30px;
+	transition: .5s;
+	
+}
+.logovai
+{
+    text-align: center;
+}
+.logovai img
+{
+    width: 120px;
+}
+.grupo-entradas{
+    top: 240px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.cajaentradatexto{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+    font-size:20px;
+    color: #fff;
+}
+.botonenviar{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(135deg, #f190c4, #c12f98);
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+	font-weight: bold;
+	border:1px solid rgb(144, 143, 143);
+    font-size: 18px;
+    color: #fff;
+}
+.checkboxvai{
+    margin: 30px 10px 30px 0;
+}
+#frmlogin{
+    left: 50px;
+}
+#frmregistrar{
+    left: 450px;
+}
+    </style>
+</head>
+<body>
+    <!-- navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="90" height="100" align="left"/>
+                <img src="img/nombre.png" width="300" height="75" align="left"/>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="donar.html">Donación</a></li>
+                <li><a href="adop.html">Adopción</a></li>
+                <li><a href="event.html">Eventos</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--registro -->
+    <section class="registro">
+    <div class="cajafuera">
+        <div class="formulariocaja">
+            <div class="botondeintercambiar">
+                <div id="btnvai"></div>
+                 <button type="button" class="botoncambiarcaja" onclick="loginvai()">Login</button>
+                 <button type="button" class="botoncambiarcaja" onclick="registrarvai()">Registrar</button>
+            </div>
+                    <div class="logovai">
+                        <img src="img/logo_3.png">
+                    </div>
+            <!--Formulario para el login -->
+            <form id="frmlogin" class="grupo-entradas" method="POST" action="php/validar.php">
+            <input type="text" class="cajaentradatexto" placeholder="&#128273; Ingresar usuario" name="txtuser" required>
+            <input type="email" class="cajaentradatexto" placeholder="&#128223 Ingresar correo electrónico" name="txtemail" required >
+            <input type="password" class="cajaentradatexto" placeholder="&#128274; Ingresar contraseña" name="txtpsswd" required>
+            <input type="checkbox" class="checkboxvai"><span style="color: #fffdfd; font-size: 15px; bottom: 66px; position: absolute;">Recordar contraseña</span>
+            <button type="submit" class="botonenviar" name="btnloginx">Iniciar sesión</button>
+            </form>
+            <!--Formulario para registrar -->
+            <form id="frmregistrar" class="grupo-entradas" method="POST" action="php/login.php">
+            <input type="text" class="cajaentradatexto" placeholder="&#128273 Ingresar usuario" required 
+            name="txtuser">
+            <input type="email" class="cajaentradatexto" placeholder="&#128223 Ingresar correo electrónico" required name="txtemail">
+            <input type="password" class="cajaentradatexto" placeholder="&#128274 Ingresar contraseña" required name="txtpsswd">
+            <input type="checkbox" class="checkboxvai"><span style="color: #ffffff; font-size: 15px; bottom: 66px; position: absolute;">He leído y acepto los términos y condiciones de uso.</span>
+            <button type="submit" class="botonenviar" name="btnregistrarx">Registrar</button>
+            </form>
+            </div>
+        </div>
+    </section>
+        <script>
+        var x = document.getElementById("frmlogin");
+        var y = document.getElementById("frmregistrar");
+        var z = document.getElementById("btnvai");
+            
+            function registrarvai(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+                function loginvai(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+
+            
+        </script>
+        
+<!-- Pie de pagina -->
+<footer class="footer">
+  <div class="column">
+    <h2><b>BUGAMBI<span style="color: #8c0383;">LIA</span></b></h2>
+    <p>Organización Bugambilia, busca realizar un cambio y dar un impacto a futuro con la reforestación del ambiente</p>
+      <div class="social">
+        <a href="https://x.com/Bugambilia0"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61561767431103"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bugambilia0/"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="column">
+      <h3>SERVICIOS</h3>
+      <p><a href="nosotros.html">Sobre nosotros</a></p>
+      <p><a href="donar.html">Donacion</a></p>
+      <p><a href="adop.html">Adopción de plantas</a></p>
+      <p><a href="event.html">Eventos</a></p>
+      <p><a href="registro.html">Registrarse</a></p>
+      <p><a href="contacto.html">Contacto</a></p>
+  </div>
+  <div class="column">
+      <h3>CONTACTENOS</h3>
+      <p><i class="fa fa-map-marker"></i> Centro, Gutiérrez Zamora</p>
+      <p><i class="fa fa-phone"></i>784 5963 211</p>
+      <p><i class="fa fa-envelope"></i> bugambilia869@gmail.com</p>
+      <h3>¿Deseas tener mas información?</h3>
+      <div class="newsletter">
+          <input type="email" placeholder="Your Email"><br><br>
+          <button>Registrarse</button>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

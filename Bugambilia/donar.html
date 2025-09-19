@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugambilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--sociales-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+.donar {
+    position: relative;
+    background: url('img/donar1.png') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donar-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.donar-content h1 {
+    color: white;
+    /*tamaño de letra*/
+    font-size: 80px;
+}
+/*donaciones*/
+.container1{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.products{
+    padding: 0 0 150px 0;
+    text-align: center;
+}
+.products1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    gap: 80px;
+}
+.product{
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 120%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+ .product:hover {
+    transform: scale(1.05);
+}
+.product img{
+    width: 150px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.product p{
+    font-size: 15px;
+    margin: 0;
+    color:#181713;
+    font-weight: 600;
+}
+.product-button a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    color:#fff;
+    background-color: #c443e8;
+}
+
+    </style>
+</head>
+<body>
+    <!-- navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="90" height="100" align="left"/>
+              <img src="img/nombre.png" width="300" height="75" align="left"/>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="donar.html">Donación</a></li>
+                <li><a href="adop.html">Adopción</a></li>
+                <li><a href="event.html">Eventos</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="donar">
+        <div class="donar-content">
+            <h1>Donaciones</h1>
+            <p style="color: white;">¡Cada Donación Cuenta Para Un Futuro Más Verde!</p><br><br>
+        </div>
+    </section>
+    <!-- donaciones -->
+    <br>
+    <br>
+    <br>
+    <br>
+   <section class="content">
+     <div class="text">
+       <center><h1><span style="font-family: 'Coiny', cursive; color: #800020; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-size: 75px;">
+         Gracias por tu interés en apoyar las iniciativas de Fundación Bugambilia</span></h1></center>
+         <br>
+         <center><h2><span style="font-family: 'Coiny', cursive; color: #3c3939; font-size: 30px;">
+          Al Donar En Nuestro Sitio Web Contribuyes A La Reforestación De Nuestra Comúnidad, Tu Donación Ayuda A Preservar Nuestro Ecosistema</h2></center><br><br>
+   </section>
+   <!-- donaciones -->
+   <main class="products container1" id="lista-1">
+    <div class="products1">
+      <div class="product-content">
+          <div class="product">
+              <img src="img/arbol.png" alt="">
+              <div class="product-txt">
+                  <h3 style="color: #c443e8; font-size: 20px;">1 ARLBOL</h3>
+                  <p class="precio">$50.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">2 ARLBOLES</h3>
+                  <p class="precio">$100.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">4 ARLBOLES</h3>
+                  <p class="precio">$200.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">6 ARBOLES</h3>
+                  <p class="precio">$300.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">8 ARBOLES</h3>
+                  <p class="precio">$400.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">10 ARLBOLES</h3>
+                  <p class="precio">$500.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">15 ARBOLES</h3>
+                  <p class="precio">$750.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="product-content">
+          <div class="product">
+            <img src="img/arbol.png" alt="">
+            <div class="product-txt">
+              <h3 style="color: #c443e8; font-size: 20px;">20 ARBOLES</h3>
+                  <p class="precio">$1000.00</p>
+                  <div class="product-button">
+                    <a href="registro.html">Donar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </main>
+   <br><br>
+   <br><br>
+   <br><br>
+<!-- Pie de pagina -->
+<footer class="footer">
+  <div class="column">
+    <h2><b>BUGAMBI<span style="color: #8c0383;">LIA</span></b></h2>
+    <p>Organización Bugambilia, busca realizar un cambio y dar un impacto a futuro con la reforestación del ambiente</p>
+      <div class="social">
+        <a href="https://x.com/Bugambilia0"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61561767431103"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bugambilia0/"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="column">
+      <h3>SERVICIOS</h3>
+      <p><a href="nosotros.html">Sobre nosotros</a></p>
+      <p><a href="donar.html">Donacion</a></p>
+      <p><a href="adop.html">Adopción de plantas</a></p>
+      <p><a href="event.html">Eventos</a></p>
+      <p><a href="registro.html">Registrarse</a></p>
+      <p><a href="contacto.html">Contacto</a></p>
+  </div>
+  <div class="column">
+      <h3>CONTACTENOS</h3>
+      <p><i class="fa fa-map-marker"></i> Centro, Gutiérrez Zamora</p>
+      <p><i class="fa fa-phone"></i>784 5963 211</p>
+      <p><i class="fa fa-envelope"></i> bugambilia869@gmail.com</p>
+      <h3>¿Deseas tener mas información?</h3>
+      <div class="newsletter">
+          <input type="email" placeholder="Your Email"><br><br>
+          <button>Registrarse</button>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

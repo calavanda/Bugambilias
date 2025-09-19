@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #000000;
+    background: #ffffffd8;  
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    font-weight: 300;
+}
+p {
+	margin: 0 0 1.5em 0;
+}
+.large-text {
+	font-size: 20px; /* Tamaño de letra más grande */
+  }
+
+.larget-text-two {
+	font-size: 30px;
+}
+.larget-text-three{
+    font-size: 17px;
+}
+img {
+	max-width: 100%;
+
+}
+.header-container {
+    background-color: #8C034E;
+    padding: 10px 20px; 
+    margin-bottom: 20px;
+    width: 97.3%;
+}
+
+.header-container h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    }
+
+.top-bar {
+    background-color: #f4e6fbd8; 
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*boton de inicio*/
+.quote-button a {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/*cabecera*/
+.navbar {
+    background-color: #8C034E;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*tamaño de letra */
+    font-size: 20px;
+}
+/*logo*/
+.logo {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	.logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	.logo-header .site-desc {
+		display: block;
+		font-weight: 200;
+		font-size: 0.8em;
+		color: #999;
+	}
+/*links de navegacion*/
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    background: url('img/inicio.jpg') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1, .hero-content h2, .hero-content p {
+    color: white;
+}
+
+.hero-buttons a {
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #8C034E;
+    color: white;
+    border-radius: 5px;
+}
+/*donacion*/
+/*contenido*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text {
+    flex: 2;
+    padding: 20px;
+}
+
+.text h1 {
+    margin-top: 0;
+}
+
+.text p {
+    margin: 10px 0;
+}
+/*plantas */
+.gallery-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(200% + 20px); /* Ajusta según el número de elementos y el margen */
+    gap: 20px; /* Añade el espaciado entre los elementos */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: calc(50% - 20px); /* Ajusta el ancho considerando el margen */
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.card .price {
+    color: #00b894;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.card button:hover {
+    background-color: #e0e0e0;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.dot.active, .dot:hover {
+    background-color: #00b894;
+}
+/*contenido de mision y vision*/
+.container-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.section {
+	flex: 1;
+	padding: 20px;
+	background-color: #eaadf67b;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.image {
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+}
+
+.image img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.section, .image {
+		width: 100%;
+	}
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #331842;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #331842;
+  }
+
+/* Reservas */
+.booking-section {
+    padding: 50px 0;
+}
+
+.booking-section .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eaadf67b;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.booking-form {
+    flex: 1;
+    background-color: #ff0090; 
+    padding: 40px;
+    border-radius: 10px 0 0 10px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input,
+.booking-form select {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-info {
+    flex: 2;
+    padding: 40px;
+}
+
+.booking-info h2 {
+    color: #cc336e;
+    font-size: 24px;
+}
+
+.booking-info h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.booking-info h1 span {
+    color:  #d62882;
+}
+
+.booking-info p {
+    margin: 20px 0;
+    color: #000000;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+/*pie de pagina*/
+.footer {
+    background: #8C034E;
+    color: white;
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.footer .column {
+width: 23%;
+}
+.footer h2 {
+color: #fff;
+font-size: 24px;
+}
+.footer h3 {
+color: #fff;
+font-size: 18px;
+margin-bottom: 20px;
+}
+.footer p, .footer a {
+color: #bbb;
+font-size: 14px;
+text-decoration: none;
+margin-bottom: 10px;
+}
+.footer a:hover {
+color: #fff;
+}
+.footer .social a {
+display: inline-block;
+margin: 0 10px;
+color: #fff;
+font-size: 20px;
+}
+.footer .newsletter input[type="email"] {
+padding: 10px;
+width: 70%;
+border: none;
+border-radius: 5px 0 0 5px;
+margin-right: -5px;
+}
+.footer .newsletter button {
+padding: 10px 20px;
+border: none;
+background-color: #39b54a;
+color: #fff;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+}
+.footer .newsletter button:hover {
+background-color: #31a343;
+}
